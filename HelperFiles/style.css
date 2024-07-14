@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  --primary_color: #1b834f;
+  --secondary_color: rgb(221, 238, 223);
+  font-family: sans-serif;
+}
+body {
+  background-color: var(--secondary_color);
+}
+h1,
+nav,
+footer {
+  font-family: "Roboto";
+}
+
+body,
+h2,
+h3,
+span {
+  font-family: "Poppins", "Gabriola";
+}
+.header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7rem;
+  background-color: var(--primary_color);
+}
+.header h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--secondary_color);
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+}
+.header span {
+  padding: 5px 20px;
+}
+.header #span a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--secondary_color);
+  font-weight: 500;
+}
+.header #span a:hover {
+  text-shadow: 0 0 3px var(--secondary_color);
+}
+.header img {
+  height: 90px;
+  width: 90px;
+
+  margin-left: 10%;
+  border-radius: 50%;
+}
+
+.header img:hover {
+  transform: scale(1.15);
+  transition-duration: 0.6s;
+}
+
+/******Nav Bar**************/
+nav {
+  width: 100%;
+  text-align: left;
+  margin-top: 1px;
+  background-color: rgb(243, 244, 245);
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary_color);
+  text-transform: uppercase;
+}
+nav ul li:hover {
+  color: var(--secondary_color);
+  background-color: var(--primary_color);
+  box-shadow: 0px 0px 2px var(--primary_color);
+  font-weight: 800;
+}
+nav ul li:hover a {
+  color: var(--secondary_color);
+  background-color: var(--primary_color);
+  text-shadow: 0px 0px 2px var(--primary_color);
+  font-weight: 1000;
+}
+
+/*****************************CSS for Home Page **********************************/
+
+.home-header-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.home-header-container img {
+  display: block;
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.header-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #fff;
+  padding: 12px 22px;
+  /*****************************************Fluid Typography************************/
+  font-size: clamp(3vw, 5vw, 2vw);
+  text-align: center;
+  text-shadow: 3px 3px var(--primary_color);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+/**********Home page section 1 text description***********/
+main #homesection1 {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+  background-color: var(--secondary_color);
+  padding: 15px;
+}
+
+main h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 25px;
+  color: var(--primary_color);
+}
+#homebodyText {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 15px;
+}
+#homeitem1h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-weight: 1000;
+  color: var(--primary_color);
+  /* border-top: 3px solid var(--primary_color); */
+}
+#homeitem1 p {
+  color: var(--primary_color);
+  font-size: 1.2rem;
+  font-weight: 1000;
+}
+main #homesection1 #h2Title {
+  grid-column: 1/ 3;
+}
+main #homesection1 #homeitem1,
+#homeitem2 {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#homeitem1 p {
+  font-size: 1.2rem;
+}
+main #homesection1 div p {
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/***********Home section 2 with cart Picture***************/
+
+#homeitem2 #imageContainer {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 10px;
+}
+#homeitem2 #imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#homeitem2 #imageContainer img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.6s;
+}
+#homeitem2 #imageContainer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.6s;
+}
+
+/********* Welcone Text *****************/
+#homeitem3 {
+  grid-column: 1 / span 2;
+  padding: 0 1.2rem;
+}
+#homebodyText {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: var(--primary_color);
+  font-weight: 1000;
+}
+/**************************Css for Footer*********************/
+footer {
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  padding: 25px;
+}
+footer ul {
+  width: 100%;
+  text-align: center;
+}
+footer ul li {
+  display: inline;
+  margin-left: 30px;
+  font-size: 1rem;
+}
