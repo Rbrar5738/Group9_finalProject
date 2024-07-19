@@ -46,6 +46,7 @@
     }
     .card-desc {
       font-size: 1rem;
+      margin:10px;
     }
     .card-link {
       background-color: #1b834f;
