@@ -42,6 +42,7 @@
     }
     .card-text {
       font-size: 1rem;
+      padding:0 10px;
     }
     .card-desc {
       font-size: 1rem;
@@ -138,10 +139,13 @@
           echo '</div>';
           echo '<div class="card-body">';
           echo '<h5 class="card-title">' . $row["ProductName"] . '</h5>';
-          echo '<p class="card-text"><b>Product ID:</b> ' . $row["ProductID"] . '</p>';
-          echo '<p class="card-text"><b>Price:</b> $' . $row["Price"] . '</p>';
-          echo '<p class="card-text"><b>Stock:</b> ' . $row["Quantity"] . '</p>';
+          echo '<table>';
+          echo '<tr><td class="card-text"><b>ID</b></td> <td>:&nbsp;&nbsp;&nbsp;'.$row["ProductID"] . '</td></tr>';
+          echo '<tr><td class="card-text"><b>Price</b></td> <td>:&nbsp;&nbsp;&nbsp; $' . $row["Price"] . '</td></tr>';
+          echo '<tr><td  class="card-text"><b>Stock</b> </td> <td>:&nbsp;&nbsp;&nbsp;' . $row["Quantity"] . '</td></tr>';
+          echo '</table>';
           echo '<p class="card-desc">' . $row["SmallDescription"] . '</p>';
+         
           echo '</div>';
           echo '<div class="card-body">';
           echo "<a class='card-link' href='../AdityaShroff/detail.php?product_id={$row['ProductID']}'>View Details</a>";
