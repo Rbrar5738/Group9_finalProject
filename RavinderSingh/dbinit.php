@@ -1,6 +1,6 @@
 <?php
 define("INITIALIZING_DATABASE", 1);
-require_once('db_conn.php');
+require_once('./DB/db_conn.php');
 
 $db = new Database();
 

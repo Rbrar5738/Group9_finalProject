@@ -23,6 +23,9 @@ class Database {
         }
     }
 
+    public function getConnection() {
+        return $this->pdo;
+      }
     public function initializeDatabase() {
         try {
             // Drop and recreate database

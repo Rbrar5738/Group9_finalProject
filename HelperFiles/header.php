@@ -1,4 +1,6 @@
-
+<?php
+require_once("../RavinderSingh/DB/db_conn.php")
+?>
 
 <head>
   <title>Coffee and Accessories</title>
@@ -23,8 +25,8 @@
 
   <nav>
     <ul>
-      <li><a id="nav" href="#">Home</a></li>
-      <li><a id="nav" href="#">Products</a></li>
+      <li><a id="nav" href="../RavinderSingh/home.php">Home</a></li>
+      <li><a id="nav" href="../RavinderSingh/products.php">Products</a></li>
       <li><a id="nav" href="#">Cart</a></li>
     </ul>
   </nav>
