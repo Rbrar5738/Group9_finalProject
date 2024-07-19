@@ -123,15 +123,11 @@
         echo '</div>'; 
       }
 
-      public function displayProducts($categoryID = 'All') {
+      public function displayProducts() {
         $query = "SELECT * FROM Products";
-        if ($categoryID !== 'All') {
-          $query .= " WHERE CategoryID = :categoryID";
-        }
+      
         $stmt = $this->pdo->prepare($query);
-        if ($categoryID !== 'All') {
-          $stmt->bindParam(':categoryID', $categoryID);
-        }
+       
         $stmt->execute();
 
         echo '<div class="products-container">';
