@@ -103,19 +103,17 @@
           echo '</div>';
           echo '</div>';
         }
-        echo '</div>'; // Close products-container
+        echo '</div>'; 
       }
     }
 
-    // Create a Database object and get the PDO connection
+  
     $db = new Database();
     $pdo = $db->getConnection();
     new ProductsClass($pdo);
   ?>
 
-  <main>
-    <!-- Additional content if needed -->
-  </main>
+
 
   <?php
     require_once("../HelperFiles/footer.php");
