@@ -32,7 +32,7 @@
     }
     .card .img img:hover {
       transform: scale(1.05);
-      transition: all 0.5s;
+      transition: all 0.5s linear;
     }
     .card-title {
       text-align: center;
@@ -43,6 +43,7 @@
     .card-text {
       font-size: 1rem;
       padding:0 10px;
+      color: #1b834f;
     }
     .card-desc {
       font-size: 1rem;
@@ -139,13 +140,13 @@
           echo '<img src="' . $row["ImageURL"] . '" class="card-img-top" alt="' . $row["ProductName"] . '">';
           echo '</div>';
           echo '<div class="card-body">';
-          echo '<h5 class="card-title">' . $row["ProductName"] . '</h5>';
+          echo '<h5 class="card-title" style="color: #1b834f;">' . $row["ProductName"] . '</h5>';
           echo '<table>';
-          echo '<tr><td class="card-text"><b>ID</b></td> <td>:&nbsp;&nbsp;&nbsp;'.$row["ProductID"] . '</td></tr>';
-          echo '<tr><td class="card-text"><b>Price</b></td> <td>:&nbsp;&nbsp;&nbsp; $' . $row["Price"] . '</td></tr>';
-          echo '<tr><td  class="card-text"><b>Stock</b> </td> <td>:&nbsp;&nbsp;&nbsp;' . $row["Quantity"] . '</td></tr>';
+          echo '<tr><td class="card-text" style="color: #1b834f;"><b>ID</b></td> <td style="color: #1b834f;">:&nbsp;&nbsp;&nbsp;'.$row["ProductID"] . '</td></tr>';
+          echo '<tr><td class="card-text" style="color: #1b834f;"><b>Price</b></td> <td style="color: #1b834f;">:&nbsp;&nbsp;&nbsp; $' . $row["Price"] . '</td></tr>';
+          echo '<tr><td  class="card-text" style="color: #1b834f;"><b>Stock</b> </td> <td style="color: #1b834f;">:&nbsp;&nbsp;&nbsp;' . $row["Quantity"] . '</td></tr>';
           echo '</table>';
-          echo '<p class="card-desc">' . $row["SmallDescription"] . '</p>';
+          echo '<p class="card-desc" style="color: #1b834f;">' . $row["SmallDescription"] . '</p>';
          
           echo '</div>';
           echo '<div class="card-body">';
