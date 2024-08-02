@@ -23,6 +23,9 @@ class Database {
         }
     }
 
+    public function getConnection() {
+        return $this->pdo;
+      }
     public function initializeDatabase() {
         try {
             // Drop and recreate database
@@ -60,8 +63,7 @@ class Database {
             FirstName VARCHAR(100) NOT NULL,
             LastName VARCHAR(100) NOT NULL,
             Email VARCHAR(100) UNIQUE NOT NULL,
-            Password VARCHAR(250) NOT NULL,
-            ConfirmPassword VARCHAR(250) NOT NULL,
+            Password VARCHAR(250) NOT NULL,          
             Mobile INT
         )");
     }
