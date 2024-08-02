@@ -1,9 +1,13 @@
 <?php
+<<<<<<< HEAD
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
 require_once("../RavinderSingh/DB/db_conn.php");
+=======
+require_once("../RavinderSingh/DB/db_conn.php")
+>>>>>>> 60e4ea5c1cf46763b77013e9beca051354ce7931
 ?>
 
 <head>
@@ -34,6 +38,7 @@ require_once("../RavinderSingh/DB/db_conn.php");
          
         </div>
     </div>
+<<<<<<< HEAD
 
     <nav>
         <ul>
@@ -43,3 +48,18 @@ require_once("../RavinderSingh/DB/db_conn.php");
         </ul>
     </nav>
 </body>
+=======
+    <div id="span">
+      <a href="../MonikaPatel/login.php">Login</a>
+  </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a id="nav" href="../RavinderSingh/home.php">Home</a></li>
+      <li><a id="nav" href="../RavinderSingh/products.php">Products</a></li>
+      <li><a id="nav" href="#">Cart</a></li>
+    </ul>
+  </nav>
+</body>
+>>>>>>> 60e4ea5c1cf46763b77013e9beca051354ce7931

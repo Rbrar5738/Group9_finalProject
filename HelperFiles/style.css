@@ -237,6 +237,7 @@ footer ul li {
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
 /************************************Cart Page*******************************/
 #myCartTitle {
   text-align: center;
@@ -506,3 +507,6 @@ footer ul li {
 input:focus {
   background-color: rgb(238, 251, 238) !important;
 }
+=======
+/************************************Products Page*******************************/
+>>>>>>> 60e4ea5c1cf46763b77013e9beca051354ce7931
